@@ -90,6 +90,10 @@ dns:
     - https://8.8.8.8/dns-query#RULES&ecs=223.5.5.0/24
   fake-ip-filter:
     - "rule-set:fakeipfilter_domain"
+    - "+.blob.core.windows.net"
+    - "+.aka.ms"
+    - "+.dl.delivery.mp.microsoft.com"
+    - "+.storeedgefd.dsx.mp.microsoft.com"
  
 # 出站策略，根据自己情况调整每个策略里分组排序，增删都可以，比如把美国自动放到第一个，比如删除香港故转，注意别漏掉表情逗号等。
 # 如果相应分组没有筛选到对应的国家，请根据自己节点名字调整筛选关键字。
