@@ -94,6 +94,7 @@ dns:
     - "+.aka.ms"
     - "+.dl.delivery.mp.microsoft.com"
     - "+.storeedgefd.dsx.mp.microsoft.com"
+    - "+.claude.ai"
  
 # 出站策略，根据自己情况调整每个策略里分组排序，增删都可以，比如把美国自动放到第一个，比如删除香港故转，注意别漏掉表情逗号等。
 # 如果相应分组没有筛选到对应的国家，请根据自己节点名字调整筛选关键字。
@@ -135,6 +136,8 @@ rules:
   - RULE-SET,private_domain,直连
   - DOMAIN-SUFFIX,hongxingyunmovie.vip, 🇭🇰 香港节点
   - DOMAIN-SUFFIX,bybit.biz, 🇨🇳 台湾节点
+  - DOMAIN-SUFFIX,bybdc6.com, 🇨🇳 台湾节点
+  - DOMAIN-SUFFIX,bybitglobal.com, 🇨🇳 台湾节点
   - RULE-SET,proxylite,🚀 默认代理
   - RULE-SET,ai,🤖 ChatGPT
   - RULE-SET,github_domain,👨🏿‍💻 GitHub
